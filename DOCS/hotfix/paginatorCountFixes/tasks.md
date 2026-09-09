@@ -2,13 +2,13 @@
 
 > Scope: research Option A (Fixes 1+2 only). Single-component change inside the paginator; no automated tests exist or will be added — validation is manual and query-log-observable, per design.md. All work is sequential (one shared modification point), so no `(P)` markers apply.
 
-- [ ] 1. Count query rework
-- [ ] 1.1 Strip sorting from the count query
+- [x] 1. Count query rework
+- [x] 1.1 Strip sorting from the count query
   - Once filtering and ordering are fully applied to the list query, build the count query from a copy of it and remove the sort order from the copy only
   - Leave a source comment marking that the count copy must be created after the order specifications are applied, so future edits preserve list ordering
   - Observable: the generated count statement contains no ORDER BY, while the list statement keeps every mandatory and user order specification
   - _Requirements: 1.1, 1.2_
-- [ ] 1.2 Execute the count exactly once with explicit grouped handling
+- [x] 1.2 Execute the count exactly once with explicit grouped handling
   - Branch on whether the query groups rows: grouped queries read all per-group count rows in a single execution and take the number of rows as the total; non-grouped queries take the single scalar result
   - Cast the total to an integer on both paths; derive total pages exactly once after the branch, keeping the existing ceiling behavior
   - Remove the exception-driven fallback execution, the broad error swallowing, and the exception import that becomes unused; count errors propagate to the caller

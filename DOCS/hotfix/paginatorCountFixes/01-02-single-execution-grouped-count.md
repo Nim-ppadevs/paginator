@@ -2,7 +2,7 @@
 task: "1.2 - Execute the count exactly once with explicit grouped handling"
 spec: "paginatorCountFixes (research Option A)"
 branch: "hotfix-paginatorCountFixes"
-status: "approved"
+status: "complete"
 ---
 
 ## Task Overview

@@ -2,7 +2,7 @@
 task: "1.1 - Strip sorting from the count query"
 spec: "paginatorCountFixes (research Option A)"
 branch: "hotfix-paginatorCountFixes"
-status: "approved"
+status: "complete"
 ---
 
 ## Task Overview

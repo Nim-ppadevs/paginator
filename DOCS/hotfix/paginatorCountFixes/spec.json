@@ -38,13 +38,13 @@
           "file": "01-01-strip-sorting-from-count-query.md",
           "generated": true,
           "approved": true,
-          "implemented": false
+          "implemented": true
         },
         "01-02": {
           "file": "01-02-single-execution-grouped-count.md",
           "generated": true,
           "approved": true,
-          "implemented": false
+          "implemented": true
         },
         "02-01": {
           "file": "02-01-verify-totals-parity-and-single-execution.md",
