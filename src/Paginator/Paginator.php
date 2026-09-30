@@ -299,7 +299,7 @@ class Paginator {
 		$cloneQuery = clone $query;
 
 		$cloneQuery->setParameters(clone $query->getParameters());
-		$cloneQuery->setCacheable(false);
+		// $cloneQuery->setCacheable(false); // removed in Doctrine ORM 3
 
 		foreach ($query->getHints() as $name => $value) {
 			$cloneQuery->setHint($name, $value);
